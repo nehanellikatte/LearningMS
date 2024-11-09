@@ -1,0 +1,99 @@
+Learning Management System (LMS)
+A Spring Boot-based Learning Management System (LMS) that provides APIs to manage courses, instructors, students, and student enrollments, as well as report generation, logging, and error handling. The project includes features for managing student performance reporting with visualizations.
+
+Features
+Course and Instructor Management: Create, update, retrieve, and delete courses and instructors.
+Student Enrollment and Grading: Enroll students in courses, assign grades, and manage enrollments.
+Reporting on Student Progress: Generate reports on student progress and performance.
+Logging and Error Handling: Detailed logging of actions and error handling with SLF4J and Logback.
+Testing: Unit and integration tests using JUnit5 for service and controller layers.
+
+
+Technology
+
+Backend: Spring Boot, Spring Data JPA
+Database: H2 (in-memory for testing)
+Logging: SLF4J, Logback
+Testing: JUnit5
+Visualization: Basic reporting with Spring REST API responses (integration with charting libraries can be done on the frontend if needed)
+
+Project Setup
+
+Java 20
+Maven 3.6+
+
+Database Configuration and Logging
+
+spring.application.name=LearningMS
+spring.datasource.url=jdbc:mysql://localhost:3306/lms_db
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+logging.level.root=INFO
+logging.file.path=logs
+logging.file.name=${logging.file.path}/${spring.application.name}
+
+logging.logback.rollingpolicy.file-name-pattern=${logging.file.name}-%d{yyyy-MM-dd}-%i.log
+logging.logback.rollingpolicy.max-file-size=5kb
+
+
+
+Run the application:
+
+The API will be available at http://localhost:8080.
+The front end will be available at http://localhost:8080/home.html.
+
+API Endpoints
+
+Instructor Management
+
+POST /instructors - Create a new instructor
+GET /instructors - Retrieve all instructors
+GET /instructors/{id} - Retrieve an instructor by ID
+PUT /instructors/{id} - Update an instructor by ID
+DELETE /instructors/{id} - Delete an instructor by ID
+
+Course Management
+
+POST /courses - Create a new course
+GET /courses - Retrieve all courses
+GET /courses/{id} - Retrieve a course by ID
+PUT /courses/{id} - Update a course by ID
+DELETE /courses/{id} - Delete a course by ID
+
+Student Management
+
+POST /students - Create a new student
+GET /students - Retrieve all students
+GET /students/{id} - Retrieve a student by ID
+DELETE /students/{id} - Delete a student by ID
+
+Enrollment and Grading
+
+POST /enrollments - Enroll a student in a course
+PUT /enrollments/{id} - Update a grade for an enrollment
+DELETE /enrollments/{id} - Delete an enrollment
+Reports
+
+GET /reports/course-performance - Get average grades per course
+GET /reports/overall-performance - Get GPA or grade averages across subjects
+
+
+Logging and Error Handling
+Logging is configured using SLF4J with Logback. You can find logs in the console output. Key actions and errors are logged at different levels (INFO, DEBUG, ERROR).
+Error handling is managed by a RuntimeException Class.
+
+
+Testing
+Running Tests
+Unit Tests: Validate individual components, such as services and repositories.
+
+Tests include:
+
+Service Layer: Tests for core business logic in the services.
+Controller Layer: Integration tests for REST API endpoints.
+

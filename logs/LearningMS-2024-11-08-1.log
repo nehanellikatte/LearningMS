@@ -1,0 +1,43 @@
+2024-11-08T10:56:46.519+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-10] c.e.LearningMS.Service.studentservice    : All the Students records retrived.
+2024-11-08T10:57:04.857+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-5] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 3
+2024-11-08T10:57:04.869+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-5] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-08T10:57:04.877+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-5] c.e.L.Service.enrollmentService          : Enrolling student with ID 3 to course with ID 19 and grade A
+2024-11-08T10:57:04.981+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-5] c.e.L.Service.enrollmentService          : Enrollment created with ID 8
+2024-11-08T10:57:07.224+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-7] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:57:13.412+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:57:13.412+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-9] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:57:59.702+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:57:59.711+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:58:11.474+05:30  INFO 11004 --- [LearningMS] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-08T10:58:11.620+05:30  INFO 11004 --- [LearningMS] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-08T10:58:11.625+05:30  INFO 11004 --- [LearningMS] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-08T10:58:11.641+05:30  INFO 11004 --- [LearningMS] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-08T10:58:25.516+05:30  INFO 18172 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : Starting LearningMsApplication using Java 20.0.1 with PID 18172 (D:\Assignments\aaa\LearningMS\target\classes started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-08T10:58:25.518+05:30  INFO 18172 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-08T10:58:26.338+05:30  INFO 18172 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-08T10:58:26.428+05:30  INFO 18172 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2024-11-08T10:58:27.110+05:30  INFO 18172 --- [LearningMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-08T10:58:27.130+05:30  INFO 18172 --- [LearningMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-08T10:58:27.131+05:30  INFO 18172 --- [LearningMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-08T10:58:27.210+05:30  INFO 18172 --- [LearningMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-08T10:58:27.211+05:30  INFO 18172 --- [LearningMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1637 ms
+2024-11-08T10:58:27.432+05:30  INFO 18172 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-08T10:58:27.559+05:30  INFO 18172 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-08T10:58:27.610+05:30  INFO 18172 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-08T10:58:28.054+05:30  INFO 18172 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-08T10:58:28.112+05:30  INFO 18172 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-08T10:58:28.700+05:30  INFO 18172 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
+2024-11-08T10:58:28.704+05:30  INFO 18172 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-08T10:58:28.794+05:30  WARN 18172 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-08T10:58:30.025+05:30  INFO 18172 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-08T10:58:30.157+05:30  INFO 18172 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-08T10:58:30.618+05:30  WARN 18172 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-08T10:58:31.107+05:30  INFO 18172 --- [LearningMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-08T10:58:31.121+05:30  INFO 18172 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : Started LearningMsApplication in 6.116 seconds (process running for 7.301)
+2024-11-08T10:58:37.313+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08T10:58:37.315+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-08T10:58:37.319+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-11-08T10:58:40.003+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:58:40.003+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-4] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:00:49.310+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-9] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:00:49.310+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-8] c.e.L.Service.enrollmentService          : Fetching all enrollment details

@@ -1,0 +1,7 @@
+2024-11-07T18:00:01.810+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-3] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-07T18:06:00.620+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-5] c.e.LearningMS.Service.courseService     : Deleting course with ID:20
+2024-11-07T18:06:13.038+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-7] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-07T18:24:25.430+05:30  INFO 28324 --- [LearningMS] [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-07T18:24:26.647+05:30  INFO 28324 --- [LearningMS] [RMI TCP Connection(37)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07T18:24:26.761+05:30  INFO 28324 --- [LearningMS] [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-07T18:24:26.930+05:30  INFO 28324 --- [LearningMS] [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

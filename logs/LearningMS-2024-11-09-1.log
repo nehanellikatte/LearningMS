@@ -1,0 +1,31 @@
+2024-11-09T12:33:59.961+05:30  INFO 19740 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-09T12:33:59.979+05:30  INFO 19740 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-09T12:36:30.119+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.i.instructorControllerTest         : Starting instructorControllerTest using Java 20.0.1 with PID 21276 (started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-09T12:36:30.121+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.i.instructorControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-11-09T12:36:31.043+05:30  INFO 21276 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-09T12:36:31.140+05:30  INFO 21276 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 4 JPA repository interfaces.
+2024-11-09T12:36:31.763+05:30  INFO 21276 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-09T12:36:31.866+05:30  INFO 21276 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-09T12:36:31.942+05:30  INFO 21276 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-09T12:36:32.500+05:30  INFO 21276 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-09T12:36:32.580+05:30  INFO 21276 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-09T12:36:33.211+05:30  INFO 21276 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a95cb11
+2024-11-09T12:36:33.215+05:30  INFO 21276 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-09T12:36:33.304+05:30  WARN 21276 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-09T12:36:34.476+05:30  INFO 21276 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-09T12:36:34.592+05:30  INFO 21276 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T12:36:35.250+05:30  WARN 21276 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-09T12:36:35.767+05:30  INFO 21276 --- [LearningMS] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-11-09T12:36:35.769+05:30  INFO 21276 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-11-09T12:36:35.772+05:30  INFO 21276 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-11-09T12:36:35.812+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.i.instructorControllerTest         : Started instructorControllerTest in 6.178 seconds (process running for 7.861)
+2024-11-09T12:36:36.565+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor details are deleted successfully.
+2024-11-09T12:36:36.712+05:30  WARN 21276 --- [LearningMS] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-11-09T12:36:36.713+05:30 ERROR 21276 --- [LearningMS] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`lms_db`.`course`, CONSTRAINT `FKo4qvgf1q7g7ra9rkjwwldtuop` FOREIGN KEY (`ins_id_ins_id`) REFERENCES `instructor` (`ins_id`))
+2024-11-09T12:36:36.766+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:36:36.887+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : instructor details are updated successfullyy.
+2024-11-09T12:36:37.008+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:36:37.019+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor details are fetching with id12 successfully
+2024-11-09T12:36:37.037+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:36:37.052+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Instructor 1 successfully.
+2024-11-09T12:36:37.063+05:30  INFO 21276 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Instructor 2 successfully.

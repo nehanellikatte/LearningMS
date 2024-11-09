@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Container styling */
+        .chart-container {
+            width: 600px;  /* Controls chart width */
+            height: 400px; /* Controls chart height */
+            margin: 20px auto; /* Centers each chart */
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Canvas styling */
+        canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Student Progress Report</h1>
+
+    <!-- Course Performance Chart -->
+    <h2 style="text-align: center;">Course Performance</h2>
+    <div class="chart-container">
+        <canvas id="coursePerformanceChart"></canvas>
+    </div>
+
+    <!-- Overall Performance Chart -->
+    <h2 style="text-align: center;">Overall Performance (GPA)</h2>
+    <div class="chart-container">
+        <canvas id="overallPerformanceChart"></canvas>
+    </div>
+
+    <script>
+        // Fetch and display Course Performance
+        fetch('/reports/course-performance')
+            .then(response => response.json())
+            .then(data => {
+                const labels = Object.keys(data);
+                const values = Object.values(data);
+
+                const ctx = document.getElementById('coursePerformanceChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Average Grade',
+                            data: values,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        aspectRatio: 1.5, // Adjusts the width-to-height ratio
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 1
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching course performance data:', error));
+
+        // Fetch and display Overall Performance (GPA)
+        fetch('/reports/overall-performance')
+            .then(response => response.json())
+            .then(data => {
+                const labels = Object.keys(data);
+                const values = Object.values(data);
+
+                const ctx = document.getElementById('overallPerformanceChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Average GPA',
+                            data: values,
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        aspectRatio: 1.5, // Adjusts the width-to-height ratio
+                        responsive: true
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching overall performance data:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Enrollment Management</h2>
+
+        <!-- Enrollment Form -->
+        <form id="enrollmentForm">
+            <h3>Enroll Student</h3>
+            <label for="studentId">Student:</label>
+            <select id="studentId" name="studentId" required>
+                <option value="">Select Student</option>
+                <!-- Students will be populated here -->
+            </select>
+
+            <label for="courseId">Course:</label>
+            <select id="courseId" name="courseId" required>
+                <option value="">Select Course</option>
+                <!-- Courses will be populated here -->
+            </select>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" placeholder="Enter Grade (optional)" />
+
+            <button type="submit">Enroll Student</button>
+        </form>
+
+        <!-- Enrollments Table -->
+        <h3>All Enrollments</h3>
+        <table id="enrollmentsTable">
+            <thead>
+                <tr>
+                    <th>Enrollment ID</th>
+                    <th>Student Name</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Enrollment rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Fetch students and courses to populate dropdowns
+        function loadDropdowns() {
+            // Fetch students
+            fetch('/students')
+                .then(response => response.json())
+                .then(data => {
+                    const studentSelect = document.getElementById('studentId');
+                    data.forEach(student => {
+                        const option = document.createElement('option');
+                        option.value = student.id;
+                        option.textContent = student.name;
+                        studentSelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Error fetching students:', error));
+
+            // Fetch courses
+            fetch('/courses')
+                .then(response => response.json())
+                .then(data => {
+                    const courseSelect = document.getElementById('courseId');
+                    data.forEach(course => {
+                        const option = document.createElement('option');
+                        option.value = course.courseId;
+                        option.textContent = course.name;
+                        courseSelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Error fetching courses:', error));
+        }
+
+        // Handle form submission to enroll a student
+        document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const studentId = document.getElementById('studentId').value;
+            const courseId = document.getElementById('courseId').value;
+            const grade = document.getElementById('grade').value;
+
+            const enrollmentData = new URLSearchParams();
+            enrollmentData.append('studentId', studentId);
+            enrollmentData.append('courseId', courseId);
+            if (grade) {
+                enrollmentData.append('grade', grade);
+            }
+
+            // Send POST request to enroll the student
+            fetch('/enrollments/enroll', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: enrollmentData.toString(),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Student Enrolled!');
+                loadEnrollments(); // Refresh the enrollments table
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error enrolling student');
+            });
+        });
+
+        // Fetch and display all enrollments
+        function loadEnrollments() {
+            fetch('/enrollments/')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.getElementById('enrollmentsTable').querySelector('tbody');
+                    tbody.innerHTML = '';
+                    data.forEach(enrollment => {
+                        const row = `
+                            <tr>
+                                <td>${enrollment.enrollId}</td>
+                                <td>${enrollment.student ? enrollment.student.name : 'N/A'}</td>
+                                <td>${enrollment.course ? enrollment.course.name : 'N/A'}</td>
+                                <td>${enrollment.grade}</td>
+                                <td>
+                                    <button onclick="deleteEnrollment(${enrollment.enrollId})">Delete</button>
+                                </td>
+                            </tr>
+                        `;
+                        tbody.innerHTML += row;
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching enrollments:', error);
+                });
+        }
+
+        // Function to delete an enrollment
+		function deleteEnrollment(enrollId) {
+		    fetch(`/enrollments/${enrollId}`, {
+		        method: 'DELETE',
+		    })
+		    .then(response => {
+		        if (response.ok) {
+		            alert('Enrollment deleted');
+		            loadEnrollments(); // Refresh the enrollments table
+		        } else {
+		            alert('Failed to delete enrollment');
+		        }
+		    })
+		    .catch(error => {
+		        console.error('Error:', error);
+		        alert('Error deleting enrollment');
+		    });
+		}
+
+        // Initial load
+        loadDropdowns();
+        loadEnrollments();
+    </script>
+
+</body>
+</html>

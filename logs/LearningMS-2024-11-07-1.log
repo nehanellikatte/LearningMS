@@ -1,0 +1,35 @@
+2024-11-07T17:19:52.651+05:30  INFO 17340 --- [LearningMS] [http-nio-8080-exec-2] c.e.L.Service.instructorService          : instructor details are updated successfullyy.
+2024-11-07T17:19:52.699+05:30  INFO 17340 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.instructorService          : All intructor details retrived successfully.
+2024-11-07T17:56:36.593+05:30  INFO 17340 --- [LearningMS] [RMI TCP Connection(48)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-07T17:56:36.948+05:30  INFO 17340 --- [LearningMS] [RMI TCP Connection(48)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07T17:56:37.010+05:30  INFO 17340 --- [LearningMS] [RMI TCP Connection(48)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-07T17:56:37.072+05:30  INFO 17340 --- [LearningMS] [RMI TCP Connection(48)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-07T17:56:56.867+05:30  INFO 28324 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : Starting LearningMsApplication using Java 20.0.1 with PID 28324 (D:\Assignments\aaa\LearningMS\target\classes started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-07T17:56:56.872+05:30  INFO 28324 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-07T17:56:57.864+05:30  INFO 28324 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07T17:56:57.965+05:30  INFO 28324 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 4 JPA repository interfaces.
+2024-11-07T17:56:58.726+05:30  INFO 28324 --- [LearningMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-07T17:56:58.751+05:30  INFO 28324 --- [LearningMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-07T17:56:58.751+05:30  INFO 28324 --- [LearningMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-07T17:56:58.838+05:30  INFO 28324 --- [LearningMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-07T17:56:58.838+05:30  INFO 28324 --- [LearningMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1895 ms
+2024-11-07T17:56:59.080+05:30  INFO 28324 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07T17:56:59.179+05:30  INFO 28324 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07T17:56:59.242+05:30  INFO 28324 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-07T17:56:59.743+05:30  INFO 28324 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07T17:56:59.788+05:30  INFO 28324 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-07T17:57:00.398+05:30  INFO 28324 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
+2024-11-07T17:57:00.403+05:30  INFO 28324 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-07T17:57:00.515+05:30  WARN 28324 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-07T17:57:01.805+05:30  INFO 28324 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07T17:57:01.970+05:30  INFO 28324 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07T17:57:02.482+05:30  WARN 28324 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07T17:57:03.030+05:30  INFO 28324 --- [LearningMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-07T17:57:03.044+05:30  INFO 28324 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : Started LearningMsApplication in 6.799 seconds (process running for 8.064)
+2024-11-07T17:58:07.932+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07T17:58:07.933+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-07T17:58:07.936+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-07T17:58:08.155+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-1] c.e.LearningMS.Service.courseService     : Creating a new course with name:ReactJS
+2024-11-07T17:58:08.440+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-2] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-07T17:58:17.273+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-4] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-07T17:58:24.605+05:30  INFO 28324 --- [LearningMS] [http-nio-8080-exec-6] c.e.LearningMS.Service.courseService     : Deleting course with ID:15

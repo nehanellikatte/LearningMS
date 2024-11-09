@@ -1,0 +1,25 @@
+2024-11-08T12:31:00.978+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-9] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-08T12:31:32.601+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] c.e.L.Service.instructorService          : All intructor details retrived successfully.
+2024-11-08T12:31:39.899+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.LearningMS.Service.courseService     : Creating a new course with name:ReactJS
+2024-11-08T12:31:39.932+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-5] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-08T12:32:59.679+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.LearningMS.Service.studentservice    : All the Students records retrived.
+2024-11-08T12:32:59.682+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-08T12:32:59.685+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-7] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:33:16.259+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 6
+2024-11-08T12:33:16.266+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-08T12:33:16.275+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.enrollmentService          : Enrolling student with ID 6 to course with ID 21 and grade S
+2024-11-08T12:33:16.290+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.enrollmentService          : Enrollment created with ID 17
+2024-11-08T12:33:17.907+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:33:33.148+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:33:33.151+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:34:39.632+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:34:39.635+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:34:52.943+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:34:52.963+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:35:09.138+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:35:09.141+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T13:22:43.418+05:30  WARN 18172 --- [LearningMS] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m42s892ms646µs800ns).
+2024-11-08T13:57:55.208+05:30  INFO 18172 --- [LearningMS] [RMI TCP Connection(166)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-08T13:57:55.766+05:30  INFO 18172 --- [LearningMS] [RMI TCP Connection(166)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-08T13:57:55.858+05:30  INFO 18172 --- [LearningMS] [RMI TCP Connection(166)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-08T13:57:55.879+05:30  INFO 18172 --- [LearningMS] [RMI TCP Connection(166)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

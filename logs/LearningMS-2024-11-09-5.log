@@ -1,0 +1,33 @@
+2024-11-09T12:46:27.765+05:30  INFO 15732 --- [LearningMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T12:46:27.772+05:30  INFO 15732 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-09T12:46:27.787+05:30  INFO 15732 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-09T12:48:45.864+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.i.instructorControllerTest         : Starting instructorControllerTest using Java 20.0.1 with PID 13552 (started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-09T12:48:45.867+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.i.instructorControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-11-09T12:48:46.726+05:30  INFO 13552 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-09T12:48:46.828+05:30  INFO 13552 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 4 JPA repository interfaces.
+2024-11-09T12:48:47.435+05:30  INFO 13552 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-09T12:48:47.530+05:30  INFO 13552 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-09T12:48:47.589+05:30  INFO 13552 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-09T12:48:48.059+05:30  INFO 13552 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-09T12:48:48.116+05:30  INFO 13552 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-09T12:48:48.646+05:30  INFO 13552 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47fa3671
+2024-11-09T12:48:48.650+05:30  INFO 13552 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-09T12:48:48.730+05:30  WARN 13552 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-09T12:48:49.885+05:30  INFO 13552 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-09T12:48:49.984+05:30  INFO 13552 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T12:48:50.649+05:30  WARN 13552 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-09T12:48:51.161+05:30  INFO 13552 --- [LearningMS] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-11-09T12:48:51.162+05:30  INFO 13552 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-11-09T12:48:51.163+05:30  INFO 13552 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-11-09T12:48:51.197+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.i.instructorControllerTest         : Started instructorControllerTest in 5.86 seconds (process running for 7.483)
+2024-11-09T12:48:51.810+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:48:51.965+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor details are deleted successfully.
+2024-11-09T12:48:52.071+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:48:52.131+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : instructor details are updated successfullyy.
+2024-11-09T12:48:52.218+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:48:52.232+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor details are fetching with id36 successfully
+2024-11-09T12:48:52.253+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Radha successfully.
+2024-11-09T12:48:52.268+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Instructor 1 successfully.
+2024-11-09T12:48:52.277+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : Instructor created with the name Instructor 2 successfully.
+2024-11-09T12:48:52.286+05:30  INFO 13552 --- [LearningMS] [main] c.e.L.Service.instructorService          : All intructor details retrived successfully.
+2024-11-09T12:48:52.421+05:30  INFO 13552 --- [LearningMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

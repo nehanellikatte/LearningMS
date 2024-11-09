@@ -1,0 +1,59 @@
+2024-11-09T13:22:45.510+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Fetching enrollments for course with ID 31
+2024-11-09T13:22:45.634+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Shivu
+2024-11-09T13:22:45.641+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Algorithms
+2024-11-09T13:22:45.648+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 9 to course with ID 32 and grade A
+2024-11-09T13:22:45.655+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 20
+2024-11-09T13:22:45.657+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 9
+2024-11-09T13:22:45.662+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Fetching enrollments for student with ID 9
+2024-11-09T13:22:45.676+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Shivu
+2024-11-09T13:22:45.684+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Algorithms
+2024-11-09T13:22:45.693+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 10 to course with ID 33 and grade A
+2024-11-09T13:22:45.701+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 21
+2024-11-09T13:22:45.703+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-09T13:22:45.771+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Shivu
+2024-11-09T13:22:45.779+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Algorithms
+2024-11-09T13:22:45.786+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 11 to course with ID 34 and grade A
+2024-11-09T13:22:45.794+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 22
+2024-11-09T13:22:45.798+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 11
+2024-11-09T13:22:45.804+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-09T13:22:45.811+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 11 to course with ID 34 and grade B
+2024-11-09T13:22:45.820+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 23
+2024-11-09T13:22:45.827+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Shivu
+2024-11-09T13:22:45.834+05:30  INFO 10568 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Algorithms
+2024-11-09T13:22:45.842+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 12 to course with ID 35 and grade A
+2024-11-09T13:22:45.850+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 24
+2024-11-09T13:22:45.852+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Attempting to delete enrollment with ID 24
+2024-11-09T13:22:46.122+05:30  INFO 10568 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment with ID 24 successfully deleted
+2024-11-09T13:22:46.136+05:30  INFO 10568 --- [LearningMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:22:46.139+05:30  INFO 10568 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-09T13:22:46.149+05:30  INFO 10568 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-09T13:24:16.616+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.i.enrollmentControllerTest         : Starting enrollmentControllerTest using Java 20.0.1 with PID 2536 (started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-09T13:24:16.618+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.i.enrollmentControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-11-09T13:24:17.418+05:30  INFO 2536 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-09T13:24:17.496+05:30  INFO 2536 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2024-11-09T13:24:18.046+05:30  INFO 2536 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-09T13:24:18.107+05:30  INFO 2536 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-09T13:24:18.155+05:30  INFO 2536 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-09T13:24:18.542+05:30  INFO 2536 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-09T13:24:18.586+05:30  INFO 2536 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-09T13:24:19.017+05:30  INFO 2536 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fac18dc
+2024-11-09T13:24:19.020+05:30  INFO 2536 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-09T13:24:19.081+05:30  WARN 2536 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-09T13:24:20.076+05:30  INFO 2536 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-09T13:24:20.186+05:30  INFO 2536 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:24:20.831+05:30  WARN 2536 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-09T13:24:21.311+05:30  INFO 2536 --- [LearningMS] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-11-09T13:24:21.312+05:30  INFO 2536 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-11-09T13:24:21.314+05:30  INFO 2536 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-11-09T13:24:21.347+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.i.enrollmentControllerTest         : Started enrollmentControllerTest in 5.117 seconds (process running for 6.605)
+2024-11-09T13:24:21.917+05:30  INFO 2536 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Shivu
+2024-11-09T13:24:22.026+05:30  INFO 2536 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Algorithms
+2024-11-09T13:24:22.036+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 13 to course with ID 36 and grade A
+2024-11-09T13:24:22.048+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 25
+2024-11-09T13:24:22.137+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Updating grade for enrollment ID 25 to S
+2024-11-09T13:24:22.206+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Grade updated for enrollment ID 25
+2024-11-09T13:24:22.351+05:30  INFO 2536 --- [LearningMS] [main] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Shivu
+2024-11-09T13:24:22.360+05:30  INFO 2536 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Algorithms
+2024-11-09T13:24:22.370+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrolling student with ID 14 to course with ID 37 and grade A
+2024-11-09T13:24:22.377+05:30  INFO 2536 --- [LearningMS] [main] c.e.L.Service.enrollmentService          : Enrollment created with ID 26
+2024-11-09T13:24:22.381+05:30  INFO 2536 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : retiving course details with iD:

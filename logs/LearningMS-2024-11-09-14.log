@@ -1,0 +1,36 @@
+2024-11-09T12:59:52.183+05:30  INFO 24108 --- [LearningMS] [http-nio-8080-exec-1] c.e.L.Service.instructorService          : All intructor details retrived successfully.
+2024-11-09T12:59:59.320+05:30  INFO 24108 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.instructorService          : All intructor details retrived successfully.
+2024-11-09T13:06:42.770+05:30  INFO 24108 --- [LearningMS] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-09T13:06:43.339+05:30  INFO 24108 --- [LearningMS] [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:06:43.418+05:30  INFO 24108 --- [LearningMS] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-09T13:06:43.593+05:30  INFO 24108 --- [LearningMS] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-09T13:07:07.006+05:30  INFO 17272 --- [LearningMS] [main] c.e.L.i.courseControllerTest             : Starting courseControllerTest using Java 20.0.1 with PID 17272 (started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-09T13:07:07.008+05:30  INFO 17272 --- [LearningMS] [main] c.e.L.i.courseControllerTest             : No active profile set, falling back to 1 default profile: "default"
+2024-11-09T13:07:08.035+05:30  INFO 17272 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-09T13:07:08.147+05:30  INFO 17272 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 4 JPA repository interfaces.
+2024-11-09T13:07:08.848+05:30  INFO 17272 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-09T13:07:08.959+05:30  INFO 17272 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-09T13:07:09.033+05:30  INFO 17272 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-09T13:07:09.661+05:30  INFO 17272 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-09T13:07:09.721+05:30  INFO 17272 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-09T13:07:10.324+05:30  INFO 17272 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bfc8558
+2024-11-09T13:07:10.329+05:30  INFO 17272 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-09T13:07:10.413+05:30  WARN 17272 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-09T13:07:11.605+05:30  INFO 17272 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-09T13:07:11.748+05:30  INFO 17272 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:07:12.457+05:30  WARN 17272 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-09T13:07:13.020+05:30  INFO 17272 --- [LearningMS] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-11-09T13:07:13.021+05:30  INFO 17272 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-11-09T13:07:13.025+05:30  INFO 17272 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-11-09T13:07:13.071+05:30  INFO 17272 --- [LearningMS] [main] c.e.L.i.courseControllerTest             : Started courseControllerTest in 6.623 seconds (process running for 8.412)
+2024-11-09T13:07:13.756+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:07:14.012+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Updating the course with ID:22
+2024-11-09T13:07:14.164+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-09T13:07:14.331+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:07:14.343+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-09T13:07:14.361+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:07:14.374+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Attempting to delete course with ID: 24
+2024-11-09T13:07:14.397+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Course with ID 24 successfully deleted
+2024-11-09T13:07:14.404+05:30  INFO 17272 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:07:14.426+05:30  INFO 17272 --- [LearningMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:07:14.429+05:30  INFO 17272 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

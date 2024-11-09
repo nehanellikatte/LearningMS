@@ -1,0 +1,29 @@
+2024-11-08T10:55:58.798+05:30  INFO 11004 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : Starting LearningMsApplication using Java 20.0.1 with PID 11004 (D:\Assignments\aaa\LearningMS\target\classes started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-08T10:55:58.804+05:30  INFO 11004 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-08T10:55:59.819+05:30  INFO 11004 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-08T10:55:59.931+05:30  INFO 11004 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 4 JPA repository interfaces.
+2024-11-08T10:56:00.715+05:30  INFO 11004 --- [LearningMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-08T10:56:00.736+05:30  INFO 11004 --- [LearningMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-08T10:56:00.737+05:30  INFO 11004 --- [LearningMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-08T10:56:00.816+05:30  INFO 11004 --- [LearningMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-08T10:56:00.816+05:30  INFO 11004 --- [LearningMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1944 ms
+2024-11-08T10:56:01.034+05:30  INFO 11004 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-08T10:56:01.127+05:30  INFO 11004 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-08T10:56:01.188+05:30  INFO 11004 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-08T10:56:01.706+05:30  INFO 11004 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-08T10:56:01.751+05:30  INFO 11004 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-08T10:56:02.380+05:30  INFO 11004 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54275b5d
+2024-11-08T10:56:02.383+05:30  INFO 11004 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-08T10:56:02.527+05:30  WARN 11004 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-08T10:56:03.782+05:30  INFO 11004 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-08T10:56:03.946+05:30  INFO 11004 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-08T10:56:04.436+05:30  WARN 11004 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-08T10:56:05.006+05:30  INFO 11004 --- [LearningMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-08T10:56:05.019+05:30  INFO 11004 --- [LearningMS] [main] c.e.LearningMS.LearningMsApplication     : Started LearningMsApplication in 6.849 seconds (process running for 8.075)
+2024-11-08T10:56:18.091+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08T10:56:18.091+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-08T10:56:18.094+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-08T10:56:20.669+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-5] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:56:20.669+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:56:46.519+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-2] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T10:56:46.519+05:30  INFO 11004 --- [LearningMS] [http-nio-8080-exec-1] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}

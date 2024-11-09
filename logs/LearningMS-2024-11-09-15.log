@@ -1,0 +1,31 @@
+2024-11-09T13:07:14.436+05:30  INFO 17272 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-09T13:09:08.386+05:30  INFO 30700 --- [LearningMS] [main] c.e.L.i.courseControllerTest             : Starting courseControllerTest using Java 20.0.1 with PID 30700 (started by Neha in D:\Assignments\aaa\LearningMS)
+2024-11-09T13:09:08.387+05:30  INFO 30700 --- [LearningMS] [main] c.e.L.i.courseControllerTest             : No active profile set, falling back to 1 default profile: "default"
+2024-11-09T13:09:09.211+05:30  INFO 30700 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-09T13:09:09.301+05:30  INFO 30700 --- [LearningMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2024-11-09T13:09:09.892+05:30  INFO 30700 --- [LearningMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-09T13:09:09.998+05:30  INFO 30700 --- [LearningMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-09T13:09:10.068+05:30  INFO 30700 --- [LearningMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-09T13:09:10.567+05:30  INFO 30700 --- [LearningMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-09T13:09:10.624+05:30  INFO 30700 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-09T13:09:11.214+05:30  INFO 30700 --- [LearningMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13234ac9
+2024-11-09T13:09:11.219+05:30  INFO 30700 --- [LearningMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-09T13:09:11.296+05:30  WARN 30700 --- [LearningMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-09T13:09:12.453+05:30  INFO 30700 --- [LearningMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-09T13:09:12.554+05:30  INFO 30700 --- [LearningMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:09:13.168+05:30  WARN 30700 --- [LearningMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-09T13:09:13.637+05:30  INFO 30700 --- [LearningMS] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-11-09T13:09:13.637+05:30  INFO 30700 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-11-09T13:09:13.639+05:30  INFO 30700 --- [LearningMS] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-11-09T13:09:13.681+05:30  INFO 30700 --- [LearningMS] [main] c.e.L.i.courseControllerTest             : Started courseControllerTest in 5.751 seconds (process running for 7.482)
+2024-11-09T13:09:14.314+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:09:14.545+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Updating the course with ID:26
+2024-11-09T13:09:14.696+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Retriving all the course successfully.}
+2024-11-09T13:09:14.846+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:09:14.860+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-09T13:09:14.880+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:09:14.892+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Attempting to delete course with ID: 28
+2024-11-09T13:09:14.918+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Course with ID 28 successfully deleted
+2024-11-09T13:09:14.929+05:30  INFO 30700 --- [LearningMS] [main] c.e.LearningMS.Service.courseService     : Creating a new course with name:Data Dtructure
+2024-11-09T13:09:14.955+05:30  INFO 30700 --- [LearningMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-09T13:09:14.957+05:30  INFO 30700 --- [LearningMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...

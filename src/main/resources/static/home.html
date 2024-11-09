@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Dashboard</title>
+    <style>
+		body {
+		    font-family: Arial, sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #f4f4f4;
+		}
+
+		.dashboard-container {
+		    width: 80%;
+		    margin: 0 auto;
+		    padding: 20px;
+		    text-align: center;
+		}
+
+		h1 {
+		    margin-bottom: 30px;
+		    font-size: 2em;
+		}
+
+		.card-container {
+		    display: flex;
+		    justify-content: space-around;
+		    flex-wrap: wrap;
+		    gap: 20px;
+		}
+
+		.card {
+		    width: 200px;
+		    padding: 20px;
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    border-radius: 5px;
+		    text-align: center;
+		    text-decoration: none;
+		    color: #333;
+		    transition: transform 0.2s;
+		}
+
+		.card h2 {
+		    margin: 10px 0;
+		    font-size: 1.5em;
+		}
+
+		.card p {
+		    font-size: 0.9em;
+		    color: #666;
+		}
+
+		.card:hover {
+		    transform: scale(1.05);
+		    border-color: #4CAF50;
+		}
+
+		.card:hover h2 {
+		    color: #4CAF50;
+		}
+
+	</style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Management Dashboard</h1>
+        <div class="card-container">
+            <a href="studentManagement.html" class="card">
+                <h2>Student Management</h2>
+                <p>Manage student records, enrollments, and details.</p>
+            </a>
+            <a href="instructorManagement.html" class="card">
+                <h2>Instructor Management</h2>
+                <p>Manage instructor information, assignments, and courses.</p>
+            </a>
+            <a href="courseManagement.html" class="card">
+                <h2>Course Management</h2>
+                <p>Manage courses, descriptions, credits, and schedules.</p>
+            </a>
+            <a href="enrollmentManagement.html" class="card">
+                <h2>Enrollment Management</h2>
+                <p>Manage student enrollments, grades, and records.</p>
+            </a>
+			<a href="report.html" class="card">
+			                <h2>Reporting Student Progress</h2>
+			                <p>Manage instructor information, assignments, and courses.</p>
+			            </a>
+        </div>
+    </div>
+</body>
+</html>

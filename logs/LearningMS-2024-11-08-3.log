@@ -1,0 +1,31 @@
+2024-11-08T11:07:23.193+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Enrolling student with ID 5 to course with ID 14 and grade A
+2024-11-08T11:07:23.204+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Enrollment created with ID 12
+2024-11-08T11:07:24.647+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-9] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:07:30.505+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-8] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 5
+2024-11-08T11:07:30.514+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-8] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-08T11:07:30.520+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-8] c.e.L.Service.enrollmentService          : Enrolling student with ID 5 to course with ID 15 and grade B
+2024-11-08T11:07:30.532+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-8] c.e.L.Service.enrollmentService          : Enrollment created with ID 13
+2024-11-08T11:07:32.378+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:07:37.819+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 5
+2024-11-08T11:07:37.825+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-08T11:07:37.832+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.L.Service.enrollmentService          : Enrolling student with ID 5 to course with ID 17 and grade C
+2024-11-08T11:07:37.843+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.L.Service.enrollmentService          : Enrollment created with ID 14
+2024-11-08T11:07:39.552+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-4] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:07:45.508+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 5
+2024-11-08T11:07:45.516+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-08T11:07:45.523+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.enrollmentService          : Enrolling student with ID 5 to course with ID 18 and grade S
+2024-11-08T11:07:45.533+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.L.Service.enrollmentService          : Enrollment created with ID 15
+2024-11-08T11:07:47.328+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:07:53.014+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-7] c.e.LearningMS.Service.studentservice    : Student record created successfully with ID 5
+2024-11-08T11:07:53.022+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-7] c.e.LearningMS.Service.courseService     : retiving course details with iD:
+2024-11-08T11:07:53.029+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-7] c.e.L.Service.enrollmentService          : Enrolling student with ID 5 to course with ID 19 and grade C
+2024-11-08T11:07:53.039+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-7] c.e.L.Service.enrollmentService          : Enrollment created with ID 16
+2024-11-08T11:07:54.693+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-8] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:08:01.050+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T11:08:01.050+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-2] c.e.L.Service.enrollmentService          : Fetching all enrollment details
+2024-11-08T12:28:43.327+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-3] c.e.LearningMS.Service.studentservice    : Student record created successfully with name Manu
+2024-11-08T12:28:43.519+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-6] c.e.LearningMS.Service.studentservice    : All the Students records retrived.
+2024-11-08T12:29:51.872+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-1] c.e.L.Service.instructorService          : Instructor created with the name Bharathi successfully.
+2024-11-08T12:29:51.942+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-10] c.e.L.Service.instructorService          : All intructor details retrived successfully.
+2024-11-08T12:30:30.814+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-5] c.e.L.Service.instructorService          : instructor details are updated successfullyy.
+2024-11-08T12:30:31.366+05:30  INFO 18172 --- [LearningMS] [http-nio-8080-exec-4] c.e.L.Service.instructorService          : All intructor details retrived successfully.

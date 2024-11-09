@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    
+         <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+	<div class="container">
+    <h1>Student Management</h1>
+
+    <!-- Form to create a new student -->
+    <h2>Create Student</h2>
+    <form id="createStudentForm">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" required pattern="\\d{10}"><br><br>
+
+        <button type="button" onclick="createStudent()">Create Student</button>
+    </form>
+
+    <p id="createResult"></p>
+
+    <!-- Button to retrieve all students -->
+    <h2>All Students</h2>
+    <button type="button" onclick="getAllStudents()">Load Students</button>
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // Function to create a new student
+        function createStudent() {
+            const name = document.getElementById('name').value;
+            const contact = document.getElementById('contact').value;
+
+            fetch('/students', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, contact: parseInt(contact) })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('createResult').innerText = `Student created with ID: ${data.id}`;
+                getAllStudents();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Function to retrieve and display all students
+        function getAllStudents() {
+            fetch('/students')
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.getElementById('studentsTable').querySelector('tbody');
+                tbody.innerHTML = '';
+                data.forEach(student => {
+                    const row = `<tr>
+                        <td>${student.id}</td>
+                        <td>${student.name}</td>
+                        <td>${student.contact}</td>
+                        <td>
+                            <button onclick="deleteStudent(${student.id})">Delete</button>
+                        </td>
+                    </tr>`;
+                    tbody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Function to delete a student
+        function deleteStudent(studentId) {
+            fetch(`/students/${studentId}`, {
+                method: 'DELETE'
+            })
+            .then(() => {
+                alert(`Student with ID ${studentId} deleted`);
+                getAllStudents();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+	</div>
+</body>
+</html>
